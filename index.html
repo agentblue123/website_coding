@@ -1,0 +1,245 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/
+f90068558c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img
+          class="header-icon"
+          src="https://www.azcentral.com/gcdn/-mm-/10b75fd0ab7792deab90a8d496074578205802c2/c=134-0-809-900/local/-/media/2015/11/25/Phoenix/Phoenix/635840802408162988-edited-david-3.jpg?width=660&height=880&fit=crop&format=pjpg&auto=webp"
+          alt=""
+        />
+        <h3 class="title"><a href="index.html">david The Coder</a></h3>
+        <nav>
+          <a href="project.html">Project</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="jumbotron">
+        <div class="jumbotron">
+          <h1
+            class="jumbotron-title"
+            onmouseover="changeTitle(this)"
+            onmouseout="changeTitleBack(this)"
+          >
+            Get Programming Tips Here!
+          </h1>
+          <div class="header-flex">
+            <div>
+              <h2 class="jumbotron-text">
+                Just new in programming world?
+                <br />
+                Let's Start with Creating Simple
+                <span style="color: #f4a261">Game and Website!</span>
+              </h2>
+              <div class="mini-text-flex">
+                <p class="mini-text">Learn Basic Programming here</p>
+                <button id="icon-up" onclick="changeText()">
+                  <i class="far fa-hand-point-up"></i>
+                </button>
+                <button id="icon-down" class="icon-down">
+                  <i class="far fa-hand-point-down" onclick="changeText()"></i>
+                </button>
+              </div>
+            </div>
+            <div>
+              <img
+              onmouseover="changeImage(this)"
+              onmouseout="changeImageBack(this)"
+                class="jumbotron-img"
+                src="data:image/jpeg;base64,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"
+                alt="gambar"
+                width="auto"
+                height="300"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------------ Meeting 10 ----------------------- -->
+      <div class="main-content">
+        <aside>
+          <div class="profile">
+            <h3 class="aside-title">It's david</h3>
+            <img
+              class="profile-picture"
+              src="https://www.azcentral.com/gcdn/-mm-/10b75fd0ab7792deab90a8d496074578205802c2/c=134-0-809-900/local/-/media/2015/11/25/Phoenix/Phoenix/635840802408162988-edited-david-3.jpg?width=660&height=880&fit=crop&format=pjpg&auto=webp"
+              alt="Cobee"
+              width="150px"
+              height="auto"
+            />
+            <div class="toggle">
+              <button class="btn" id="green">
+                <i class="fa fa-thumbs-up fa-lg"></i>
+              </button>
+              <button class="btn" id="red">
+                <i class="fa fa-thumbs-down fa-lg"></i>
+              </button>
+            </div>
+          </div>
+          <div class="search-tags-container">
+            <div class="input-tag">
+              <h3 class="aside-title">Search Here</h3>
+              <input id="myInput" type="text" placeholder="Search..." />
+              <span class="addBtn" onclick="newElement()"> Search</span>
+            </div>
+            <ul id="myUL" class="search-tags-list">
+              <li class="search-tags-item">HTML</li>
+              <li class="search-tags-item">Code</li>
+            </ul>
+          </div>
+        </aside>
+
+        <div class="content">
+          <article id="my-project">
+            <h3 class="article-title">My Project</h3>
+            <div class="project-container">
+              <div class="project">
+                <img
+                  src="https://helmboldshotdogs.com/cdn/shop/articles/Uncle_Sam__pointing_finger.jpg?v=1483553834"
+                  alt="rally"
+                  width="300px"
+                  height="210px"
+                />
+                <h4 class="project-title">soldier recruit</h4>
+                <p class="project-description">
+                  uncle sam wants you to fight against russia
+                </p>
+              </div>
+              <div class="project">
+                <img
+                  src="asset/Untitled-1.gif"
+                  alt="memory-game"
+                  width="300px"
+                  height="210px"
+                />
+                <h4 class="project-title">secret agency</h4>
+                <p class="project-description">
+                  join the agency to bring freedom and glory to the innocent
+                </p>
+              </div>
+            </div>
+            <div class="project-container">
+              <div class="project">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Burger_King_logo_%281999%29.svg/2024px-Burger_King_logo_%281999%29.svg.png"
+                  alt="platformer"
+                  width="450px"
+                  height="210px"
+                />
+                <h4 class="project-title">burger king discount</h4>
+                <p class="project-description">
+                  buy 1 burger get 1 free coka cola
+                </p>
+              </div>
+              <div class="project">
+                <img
+                  src="https://kgo.googleusercontent.com/profile_vrt_raw_bytes_1587515358_10512.png"
+                  alt="florist"
+                  width="450px"
+                  height="210px"
+                />
+                <h4 class="project-title">employment</h4>
+                <p class="project-description">
+                  we are looking a technician for our company
+                </p>
+              </div>
+            </div>
+          </article>
+          <article id="maps">
+            <div class="maps">
+              <h3 class="article-title">Location</h3>
+              <div class="location">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63468.14382236577!2d106.82047182167969!3d-6.163023399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f59846fb2bb5%3A0x38dbd81f5b22434a!2sCoding%20Bee%20Academy%20(Kelapa%20Gading)!5e0!3m2!1sid!2sid!4v1691143666593!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+                ></https:>
+                <div class="maps-text">
+                  <!-- <h3>Timedoor Coding Academy</h3>
+                                <p>Timedoor Coding Academy adalah bagian dari PT Timedoor Indonesia, <br>
+                                tempat penulis belajar konsep programming sehingga bisa membuat Blog ini.</p> -->
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+                  <!-- ------------------------ Meeting 11----------------------- -->
+                  <article id="video">
+                    <div class="item-video">
+                      <h3 class="article-title">What is Coding?</h3>
+                      <iframe
+                        class="video-content"
+                        width="700px"
+                        height="400px"
+                        src="https://www.youtube.com/embed/XMZFUnAgOqs"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+        
+                      <h3 class="article-title">Coding is Not Difficult !</h3>
+                      <iframe
+                        class="video-content"
+                        width="700px"
+                        height="400px"
+                        src="https://www.youtube.com/embed/hb7Q33ysCwI"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </article>
+        
+    <!-- ------------------------ Meeting 10 ----------------------- -->
+    <footer>
+      <div class="main-footer">
+        <h3 class="info-top">david The Junior Programmer</h3>
+        <div class="social-media">
+          <i class="fab fa-instagram-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fas fa-envelope"></i>
+          <i class="fab fa-discord"></i>
+          <i class="fas fa-location-pin"></i>
+          <i class="fa-solid fa-message"></i>
+        </div>
+        <p class="info-center">
+          Copyright &copy; 2021. david. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>
+
+ <button onclick="btnLike()">Day</button>
+    <button onclick="btnDislike()">Night</button>
+  </body>
+
+  <script>
+    function btnLike() {
+      document.querySelector("body").style.color = "black";
+      document.querySelector("body").style.backgroundColor = "white";
+    }
+    function btnDislike() {
+      document.querySelector("body").style.color = "white";
+      document.querySelector("body").style.backgroundColor = "black";
+    }
+  </script>
